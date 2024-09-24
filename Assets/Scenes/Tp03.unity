@@ -1202,6 +1202,63 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 50.61, y: -128.782, z: -119.186}
+--- !u!1001 &926015314
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 3761446809164937136, guid: 620d2476d55bd46e7b91d59d6277176c, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 127.14
+      objectReference: {fileID: 0}
+    - target: {fileID: 3761446809164937136, guid: 620d2476d55bd46e7b91d59d6277176c, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.04999948
+      objectReference: {fileID: 0}
+    - target: {fileID: 3761446809164937136, guid: 620d2476d55bd46e7b91d59d6277176c, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 4.76
+      objectReference: {fileID: 0}
+    - target: {fileID: 3761446809164937136, guid: 620d2476d55bd46e7b91d59d6277176c, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.7356494
+      objectReference: {fileID: 0}
+    - target: {fileID: 3761446809164937136, guid: 620d2476d55bd46e7b91d59d6277176c, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3761446809164937136, guid: 620d2476d55bd46e7b91d59d6277176c, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.6773625
+      objectReference: {fileID: 0}
+    - target: {fileID: 3761446809164937136, guid: 620d2476d55bd46e7b91d59d6277176c, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3761446809164937136, guid: 620d2476d55bd46e7b91d59d6277176c, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3761446809164937136, guid: 620d2476d55bd46e7b91d59d6277176c, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 85.276
+      objectReference: {fileID: 0}
+    - target: {fileID: 3761446809164937136, guid: 620d2476d55bd46e7b91d59d6277176c, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4573554256161615114, guid: 620d2476d55bd46e7b91d59d6277176c, type: 3}
+      propertyPath: m_Name
+      value: Whiteclown N Hallin@Standing Run Forward (1)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 620d2476d55bd46e7b91d59d6277176c, type: 3}
 --- !u!1 &963194225
 GameObject:
   m_ObjectHideFlags: 0
@@ -1894,8 +1951,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1602852913}
   serializedVersion: 2
-  m_LocalRotation: {x: -0.1265565, y: 0.0018705127, z: 0.00023862523, w: 0.9919576}
-  m_LocalPosition: {x: 92.27019, y: 22.18262, z: -51.130966}
+  m_LocalRotation: {x: 0.17017058, y: 0.48310956, z: 0.0963265, w: -0.85344505}
+  m_LocalPosition: {x: 104.29729, y: 14.622297, z: -43.267982}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -2441,3 +2498,4 @@ SceneRoots:
   - {fileID: 1943093158}
   - {fileID: 1815001960}
   - {fileID: 1881559518}
+  - {fileID: 926015314}
