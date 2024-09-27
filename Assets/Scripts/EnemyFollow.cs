@@ -1,12 +1,16 @@
 using UnityEngine;
-
+using UnityEngine.UIElements;
+using UnityEngine.SceneManagement;
 public class EnemyFollow : MonoBehaviour
 {
     public Transform player;        // Référence au joueur
     public float speed = 0.05f;      // Vitesse de déplacement vers le joueur
-    public const float activationDistance = 5.0f;  // Distance d'activation de l'ennemi
+    public const float activationDistance = 2.0f;  // Distance d'activation de l'ennemi
     private Animator animator;      // Référence à l'Animator
-
+    
+    public ProgressBar1 progressBar1;
+    private float currentHealth;
+    private float maxHealth = 100f;
     Vector3 direction;
 
     void Start()
@@ -16,6 +20,8 @@ public class EnemyFollow : MonoBehaviour
         {
             player = GameObject.FindGameObjectWithTag("Player").transform;
         }
+
+                currentHealth = maxHealth;
 
         // Récupérer le composant Animator
         animator = GetComponent<Animator>();
@@ -44,14 +50,23 @@ public class EnemyFollow : MonoBehaviour
 
                 // // Calculer la direction vers le joueur
                 direction = (player.position - transform.position).normalized;
-                 Debug.Log("Le joueur s'approche. Activation de l'ennemi."+ direction);
+                Debug.Log("Le joueur s'approche. Activation de l'ennemi."+ direction);
 
                 // // Déplacer l'ennemi vers le joueur
                 transform.position += (direction /5) * speed * Time.deltaTime;
 
                 // Faire face au joueur
                 transform.LookAt(player);
+                
+                currentHealth -= 5f;
+                currentHealth = Mathf.Clamp(currentHealth, 0, maxHealth); 
+                progressBar1.Val= currentHealth; // Appeler la mise à jour de la barre de sante
+
+                if (currentHealth == 0 ) {
+                            SceneManager.LoadScene ("Menu");
+                }
             }
+        
             // else
             // {
             //     if (animator.enabled)
@@ -66,4 +81,5 @@ public class EnemyFollow : MonoBehaviour
             // }
         }
     }
-}
+    }
+
